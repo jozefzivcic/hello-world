@@ -9,7 +9,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                bat 'copy ret_val.py "C:\Users\Jozef Zivcic\Desktop"'
+                bat 'copy ret_val.py "C:/Users/Jozef Zivcic/Desktop"'
             }
         }
     }

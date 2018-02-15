@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'echo "Hello world"'
-                python ret_val.py
+                sh 'python ret_val.py'
             }
         }
     }

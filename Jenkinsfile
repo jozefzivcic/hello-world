@@ -1,10 +1,10 @@
 pipeline {
-    agent { docker 'python:2.7.10' }
+    agent { any }
     stages {
         stage('build') {
             steps {
-                bat 'python --version'
                 bat 'echo "Hello world"'
+                python ret_val.py
             }
         }
     }

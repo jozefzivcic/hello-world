@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'python ret_val.py'
+                bat 'python ret_val.py -i'
             }
         }
     }
